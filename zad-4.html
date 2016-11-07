@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title> Mirror</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<script>
+
+let number = 123456768997, split, mirrored = "";
+
+  for(let i = 0; number >= 1 ; i++){
+  split = (number % 10) | 0;
+  number /= 10 | 0;
+  mirrored += split;
+
+}
+console.log(mirrored);
+
+</script>
+</body>
+<html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div>
+<script>
+let number = 3456789;
+let devider = 10, sum = 0, counter = 0, mult = 1, afterDevide = 1;
+
+while(number >= 1){
+  afterDevide = (number % devider) | 0;
+  number /= devider | 0;
+  sum += afterDevide;
+  mult *= afterDevide;
+  counter++;
+}
+  let averageValue = (sum / counter) | 0;
+  console.log("number of digits: " + counter);
+  console.log("sum: " + sum);
+  console.log("multiplication: " + mult);
+  console.log("average value: " + averageValue);
+
+</script>
+  </div>
+</body>
+<html>
